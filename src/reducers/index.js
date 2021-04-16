@@ -1,8 +1,21 @@
+import { bindActionCreators } from "redux";
+
+import { FETCH_SMURF_START } from '../actions'
 
 export const initialState = {
+    smurfs: [],
+    isLoading: false,
+    error: ''
 }
 
-const reducer = ()=>{
+export const reducer = (state = initialState, action)=>{
+    switch(action.type){
+        case FETCH_SMURF_START:
+            return {...state,
+                 isLoading: true}
+        default:
+            return state
+    }
 }
 
 export default reducer;

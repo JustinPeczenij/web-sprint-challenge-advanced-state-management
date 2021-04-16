@@ -20,7 +20,7 @@ import Smurf from './Smurf';
     </div>);
 }
 
-export default SmurfList;
+export default SmurfList
 
 //Task List:
 //1. Connect the smurfs and loading state values to the SmurfList component.
