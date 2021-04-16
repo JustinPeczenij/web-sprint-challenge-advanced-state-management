@@ -30,15 +30,14 @@ const AddForm = (props) => {
             description:state.description,
             id: Date.now()
         })
-        // setState({
-        //     name:"",
-        //     position:"",
-        //     nickname:"",
-        //     description:""
-        // })
+        setState({
+            name:"",
+            position:"",
+            nickname:"",
+            description:"",
+            id: ""
+        })
     }
-
-    // const errorMessage = "";
 
     return(<section>
         <h2>Add Smurf</h2>
